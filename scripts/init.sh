@@ -8,7 +8,7 @@ systemctl start ntpd
 tee /etc/yum.repos.d/percona-release.repo <<-'EOF'
 [percona]
 name = percona
-baseurl = https://mirrors.tuna.tsinghua.edu.cn/percona/release/7/RPMS/x86_64
+baseurl = https://mirrors4.tuna.tsinghua.edu.cn/percona/release/7/RPMS/x86_64
 enabled = 1
 gpgcheck = 0
 EOF
@@ -16,7 +16,7 @@ EOF
 tee /etc/yum.repos.d/salt-latest.repo <<-'EOF'
 [salt-latest]
 name=SaltStack Latest Release Channel for RHEL/Centos 7
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/saltstack/yum/redhat/7/x86_64/latest/
+baseurl=https://mirrors4.tuna.tsinghua.edu.cn/saltstack/yum/redhat/7/x86_64/latest/
 failovermethod=priority
 enabled=1
 gpgcheck=0
